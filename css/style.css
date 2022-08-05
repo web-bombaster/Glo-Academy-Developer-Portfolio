@@ -1,0 +1,75 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+
+	/*Перенос длинных слов*/
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-webkit-animation: bugfix infinite 1s;
+}
+
+/* https://stackoverflow.com/questions/8320530/webkit-bug-with-hover-and-multiple-adjacent-sibling-selectors */
+@-webkit-keyframes bugfix {
+	from { padding: 0; }
+	to { padding: 0; }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 87rem;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #BF7506;
+}
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.logo__img {
+    height: 2.5rem;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.nav__item--active {
+    font-weight: 700;
+}
+
+.nav__link {
+    color: #BF7506;
+
+}
