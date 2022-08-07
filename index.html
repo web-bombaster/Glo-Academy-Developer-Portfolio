@@ -9,23 +9,183 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrapper">
+	<!-- <div class="wrapper"> -->
+
 		<header class="header">
-			<a class="header__logo logo" href="/">
-				<img class="logo__img" src="./img/logo.svg" alt="">
-			</a>
-			<nav class="header-nav nav">
-				<ul class="nav__list">
-					<li class="nav__item nav__item--active"><a href="#" class="nav__link">Главная</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Обо мне</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Связаться</a></li>
-				</ul>
-			</nav>
+			<div class="wrapper wrapper__header">
+				<a class="header__logo logo" href="/">
+					<img class="logo__img" src="./img/logo.svg" alt="">
+				</a>
+				<nav class="header-nav nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item--active"><a href="#" class="nav__link">Главная</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Обо мне</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Связаться</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
-	</div>
+		<!-- ./header -->
+
+		<!-- <main class="main"> -->
+
+
+			<section class="hero">
+				<div class="wrapper wrapper__hero">
+					<img src="./img/face.jpg" alt="" class="hero__img">
+					<div class="hero__box hero-box">
+						<span class="hero-box__hello">Привет 👋</span>
+						<h1 class="hero-box__title">
+							<span class="color-accent">Я фронтенд-разработчик и веб-дизайнер</span>
+							Меня зовут Артем Исламов и я делаю сайты для людей и компаний
+						</h1>
+						<div class="hero-box__footer">
+							<ul class="social-links">
+								<li class="social-links__item">
+									<a href="#" class="social-links__link">
+										<img class="social-links__img" src="./img/icons/in.svg" alt="">
+									</a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link">
+										<img class="social-links__img" src="./img/icons/tw.svg" alt="">
+									</a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link">
+										<img class="social-links__img" src="./img/icons/gh.svg" alt="">
+									</a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link">
+										<img class="social-links__img" src="./img/icons/so.svg" alt="">
+									</a>
+								</li>
+								<li class="social-links__item">
+									<a href="#" class="social-links__link">
+										<img class="social-links__img" src="./img/icons/yt.svg" alt="">
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="hero-box__btn btn">Скачать резюме</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./hero -->
+
+			<!-- Глюк -->
+			<section class="projects">
+				<div class="wrapper">
+					<h2 class="projects__title">Последние проекты</h2>
+					<div class="projects__list projects-list">
+						<div class="projects-list__item">
+							<img class="projects-list__img" src="./img/project-01.jpg" alt="">
+							<h3 class="projects-list__title">Мобильное приложение</h3>
+							<div class="projects-list__tags tags">
+								<span class="tags__item">HTML</span>
+								<span class="tags__item">CSS</span>
+								<span class="tags__item">JavaScript</span>
+								<span class="tags__item">Git</span>
+								<span class="tags__item">Vitejs</span>
+							</div>
+							<p class="projects-list__decr">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<div class="projects-list__buttons">
+								<a class="projects__btn projects__btn--code btn" href="#">Код</a>
+								<a class="projects__btn projects__btn--demo btn" href="#">Демо</a>
+							</div>
+						</div>
+						<div class="projects-list__item">
+							<img class="projects-list__img" src="./img/project-02.jpg" alt="">
+							<h3 class="projects-list__title">Одностраничный промо-сайт</h3>
+							<div class="projects-list__tags tags">
+								<span class="tags__item">HTML</span>
+								<span class="tags__item">CSS</span>
+							</div>
+							<p class="projects-list__decr">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<div class="projects-list__buttons">
+								<a class="projects__btn projects__btn--code btn" href="#">Код</a>
+								<a class="projects__btn projects__btn--demo btn" href="#">Демо</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.projects -->
+
+			<section class="about">
+				<div class="wrapper about__wrapper">
+					<div class="about__box">
+						<img class="about__img" src="./img/about.jpg" alt="">
+						<div class="about__info about-info">
+							<span class="about-info__subtitle">Рад вас видеть</span>
+							<h2 class="about-info__title">Я Артем Исламов</h2>
+							<p>Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код.</p>
+							<h3>Код, Дизайн, Обучение</h3>
+							<p>Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть:
+								Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress</p>
+							<img class="about__signature" src="/img/signature.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.about -->
+
+
+			<section class="technologies">
+				<div class="wrapper wrapper__technologies">
+					<h2 class="technologies__title">Работаю с разными языками и инструментами</h2>
+					<div class="tags">
+						<span class="tags__item">HTML</span>
+						<span class="tags__item">CSS</span>
+						<span class="tags__item">JavaScript</span>
+						<span class="tags__item">Wordpress</span>
+						<span class="tags__item">npm</span>
+						<span class="tags__item">Reactjs</span>
+						<span class="tags__item">Nextjs</span>
+						<span class="tags__item">UI Design</span>
+						<span class="tags__item">SASS</span>
+					</div>
+				</div>
+			</section>
+			<!-- /.technologies -->
+
+		<!-- </main> -->
+		<!-- /.main -->
+
+		<!-- </div> -->
+
+	<section class="contacts">
+		<div class="wrapper wrapper__contacts">
+			<form class="contacts__form form" action="#" method="post">
+				<h2 class="form__title">Готов обсудить проект...</h2>
+				<div class="form__inner">
+					<input type="text" name="name" id="name">
+					<label for="name">Имя</label>
+				</div>
+				<div class="form__inner">
+					<input type="email" name="mail" id="mail">
+					<label for="mail">Email</label>
+				</div>
+				<div class="form__inner">
+					<textarea name="message" id="message"></textarea>
+					<label for="message">Сообщение</label>
+				</div>
+				<button class="form__btn btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</section>
+	<!-- /.contacts -->
+
+	<footer class="footer">
+			Сделано с ❤️ в Казани
+	</footer>
+	<!-- /.footer -->
+
 </body>
 </html>
